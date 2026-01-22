@@ -15,19 +15,6 @@
                 href="http://localhost:1313/en/about/"
                 />
   </url><url>
-    <loc>http://localhost:1313/en/tags/</loc>
-    <lastmod>2026-01-22T09:33:53+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-Hans"
-                href="http://localhost:1313/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/tags/"
-                />
-  </url><url>
     <loc>http://localhost:1313/en/</loc>
     <lastmod>2026-01-22T09:33:53+08:00</lastmod>
     <xhtml:link
@@ -39,6 +26,19 @@
                 rel="alternate"
                 hreflang="en-US"
                 href="http://localhost:1313/en/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/tags/</loc>
+    <lastmod>2026-01-22T09:33:53+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hans"
+                href="http://localhost:1313/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/tags/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/posts/first-post/</loc>
