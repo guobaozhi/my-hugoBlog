@@ -1,0 +1,141 @@
+/* =========================================
+   强制并排 + 间距 + Cactus 风格完整代码
+   ========================================= */
+
+/* --- 1. 强制设置父容器为 Flex 布局 --- */
+#nav {
+  /* !important 用于覆盖主题原有的布局代码 */
+  display: flex !important;
+  align-items: center !important; /* 垂直居中 */
+  justify-content: flex-end;       /* 整体靠右对齐 */
+  flex-wrap: nowrap !important;    /* 禁止换行，强制一行显示 */
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* --- 2. 核心修复：强制导航菜单列表为行内元素 --- */
+#nav > ul {
+  /* 关键：如果不加这行，ul 默认是块级元素，会占满一行把切换器挤下去 */
+  display: inline-flex !important;
+
+  /* 确保菜单项也是横向排列的 */
+  align-items: center !important;
+
+  /* 核心需求：菜单与右侧语言按钮的间距 */
+  margin-right: 60px !important;
+
+  /* 清除默认边距 */
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding: 0 !important;
+}
+
+/* --- 3. 强制语言切换器为行内元素 --- */
+.lang-switch {
+  display: inline-flex !important;
+  margin: 0 !important;
+  vertical-align: middle;
+}
+
+/* --- 4. 胶囊样式美化 (符合 Cactus 简约风格) --- */
+.lang-switch ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.05); /* 浅灰背景 */
+  border-radius: 20px;                     /* 圆角 */
+  padding: 2px;                           /* 内部微距 */
+}
+
+.lang-switch li {
+  margin: 0;
+  padding: 0;
+}
+
+.lang-switch a {
+  display: inline-block;
+  padding: 6px 14px;      /* 按钮尺寸 */
+  font-size: 0.85rem;     /* 稍微小一点的字体 */
+  text-decoration: none;
+  color: #555;           /* 默认灰色文字 */
+  border-radius: 18px;    /* 按钮圆角 */
+  transition: all 0.2s ease;
+}
+
+/* 鼠标悬停交互 */
+.lang-switch a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+/* 当前激活语言样式 */
+.lang-switch a.active {
+  background-color: #333; /* 选中时：深色背景 (符合 Cactus 默认深色字风格) */
+  color: #fff;            /* 白色文字 */
+  font-weight: 600;       /* 字体加粗 */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15); /* 轻微浮起 */
+}
+
+/* --- 5. 深色模式适配 --- */
+@media (prefers-color-scheme: dark) {
+  .lang-switch ul {
+    background-color: rgba(255, 255, 255, 0.15); /* 深色模式下背景变淡 */
+  }
+  .lang-switch a {
+    color: #ccc;
+  }
+  .lang-switch a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #fff;
+  }
+  .lang-switch a.active {
+    background-color: #fff; /* 选中变为白色背景 */
+    color: #000;           /* 文字变为黑色 */
+  }
+}
+
+/* Footer 样式（匹配 Cactus 主题） */
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-top: 1px solid #eee; /* 与主题边框风格一致 */
+  margin-top: 40px; /* 与内容区保持间距 */
+  font-size: 0.9em; /* 字体大小符合主题 */
+  color: #666; /* 文字颜色（Cactus 默认浅灰） */
+}
+
+.footer-left, .footer-right {
+  flex: 1;
+}
+
+/* 版权信息样式 */
+.footer-left p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* CC 协议图标样式 */
+.footer-left a img {
+  vertical-align: middle;
+  transition: opacity 0.2s ease;
+}
+
+.footer-left a:hover img {
+  opacity: 0.8; /* 鼠标悬停时图标变淡（可选） */
+}
+
+/* 导航链接样式 */
+.footer-right a {
+  margin-left: 15px; /* 链接间距 */
+  color: #666;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-right a:hover {
+  color: #333; /* 鼠标悬停时变深 */
+}

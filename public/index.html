@@ -14,24 +14,24 @@
 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>我的博客</title>
+  <title>Boz&#39;s Blog</title>
   <link rel = 'canonical' href = 'http://localhost:1313/'>
-  <meta name="description" content="Hugo 是一个通用的网站框架。从技术上讲，Hugo 是一个静态站点生成器。与每次访问动态生成页面的系统不同，Hugo 在你创建或更新内容时就会构建页面。因为网站被浏览的次数远多于被编辑的次数，Hugo 旨在为网站最终用户提供最佳的浏览体验，并为网站作者提供理想的写作体验。">
+  <meta name="description" content="没什么大道理，就是不想让这些笔记烂在硬盘里。">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="all,follow">
   <meta name="googlebot" content="index,follow,snippet,archive">
 
   <meta property="og:url" content="http://localhost:1313/">
-  <meta property="og:site_name" content="我的博客">
-  <meta property="og:title" content="我的博客">
-  <meta property="og:description" content="Hugo 是一个通用的网站框架。从技术上讲，Hugo 是一个静态站点生成器。与每次访问动态生成页面的系统不同，Hugo 在你创建或更新内容时就会构建页面。因为网站被浏览的次数远多于被编辑的次数，Hugo 旨在为网站最终用户提供最佳的浏览体验，并为网站作者提供理想的写作体验。">
+  <meta property="og:site_name" content="Boz&#39;s Blog">
+  <meta property="og:title" content="Boz&#39;s Blog">
+  <meta property="og:description" content="没什么大道理，就是不想让这些笔记烂在硬盘里。">
   <meta property="og:locale" content="zh_Hans">
   <meta property="og:type" content="website">
 
   
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="我的博客">
-  <meta name="twitter:description" content="Hugo 是一个通用的网站框架。从技术上讲，Hugo 是一个静态站点生成器。与每次访问动态生成页面的系统不同，Hugo 在你创建或更新内容时就会构建页面。因为网站被浏览的次数远多于被编辑的次数，Hugo 旨在为网站最终用户提供最佳的浏览体验，并为网站作者提供理想的写作体验。">
+  <meta name="twitter:title" content="Boz&#39;s Blog">
+  <meta name="twitter:description" content="没什么大道理，就是不想让这些笔记烂在硬盘里。">
 
 
   
@@ -42,7 +42,7 @@
   <link rel="stylesheet" href="http://localhost:1313/css/styles.94f653e9e151e28067a7c5dbbc4600cbd5a3c721e79faaf971e523c40f3b249b8e4f20bb57810dfffa8d559ca5c140fd56eb4cd9c0853113ad08e66afdb08bdd.css" integrity="sha512-lPZT6eFR4oBnp8XbvEYAy9WjxyHnn6r5ceUjxA87JJuOTyC7V4EN//qNVZylwUD9VutM2cCFMROtCOZq/bCL3Q==">
 
   
-  
+   <link rel="stylesheet" href="http://localhost:1313/css/custom.css"> 
 
   
     <!--[if lt IE 9]>
@@ -57,7 +57,7 @@
 
   
   
-    <link href="http://localhost:1313/index.xml" rel="alternate" type="application/rss+xml" title="我的博客" />
+    <link href="http://localhost:1313/index.xml" rel="alternate" type="application/rss+xml" title="Boz's Blog" />
   
   
 
@@ -70,13 +70,14 @@
     <header id="header">
   <a href="http://localhost:1313/">
   
-    <div id="logo" style="background-image: url(http://localhost:1313/images/logo.png)"></div>
+    <div id="logo" style="background-image: url('http://localhost:1313/images/logo.png')"></div>
   
   <div id="title">
-    <h1>我的博客</h1>
+    <h1>Boz&#39;s Blog</h1>
   </div>
   </a>
   <div id="nav">
+    
     <ul>
       <li class="icon">
         <a href="#" aria-label="Menu"><i class="fas fa-bars fa-2x" aria-hidden="true"></i></a>
@@ -86,20 +87,41 @@
       
         <li><a href="/posts/">文章</a></li>
       
-        <li><a href="/tags/">标签</a></li>
-      
         <li><a href="/about/">关于</a></li>
       
     </ul>
+
+    
+    <nav class="lang-switch">
+  <ul>
+    
+      <li>
+        <a href="/"
+           title="中文"
+            class="active" >
+          中文
+        </a>
+      </li>
+    
+      <li>
+        <a href="/en/"
+           title="English"
+           >
+          English
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
   </div>
 </header>
-
 
 
     
   <section id="about">
   
-    Hugo 是一个通用的网站框架。从技术上讲，Hugo 是一个静态站点生成器。与每次访问动态生成页面的系统不同，Hugo 在你创建或更新内容时就会构建页面。因为网站被浏览的次数远多于被编辑的次数，Hugo 旨在为网站最终用户提供最佳的浏览体验，并为网站作者提供理想的写作体验。
+    没什么大道理，就是不想让这些笔记烂在硬盘里。
   
   
       <p>Find me on
@@ -120,7 +142,7 @@
          and 
       
       
-        <a class="icon" target="_blank" rel="noopener" href="mailto:example@example.com" aria-label="Email">
+        <a class="icon" target="_blank" rel="noopener" href="mailto:guobaozhi@gmail.com" aria-label="Email">
           <i class="fas fa-envelope" aria-hidden="true"></i>
         </a>
         
@@ -133,6 +155,17 @@
 
   <section id="writing">
     <span class="h1"><a href="http://localhost:1313/posts">Writings</a></span>
+    
+    <span class="h2">Topics</span>
+    <span class="widget tagcloud">
+      
+      
+      <a style="font-size: 3rem;" href="http://localhost:1313/tags/%E5%85%A5%E9%97%A8/">入门</a>
+      
+      <a style="font-size: 3rem;" href="http://localhost:1313/tags/%E7%A4%BA%E4%BE%8B/">示例</a>
+      
+    </span>
+    <span class="h2">Most recent</span>
     
 
     
@@ -147,6 +180,11 @@
       
         
       
+      
+        <li class="post-item">
+          <div class="meta"><time datetime="2026-01-22 09:27:39 &#43;0800 CST" itemprop="datePublished">2026-01-22</time></div>
+          <span><a href="http://localhost:1313/posts/first-post/">入门，示例</a></span>
+        </li>
       
     </ul>
     
@@ -172,22 +210,15 @@
 
     <footer id="footer">
   <div class="footer-left">
-    Copyright  &copy; 2026  Boz 
+    <p>
+      Copyright &copy; 2026 Boz&#39;s Blog
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license" target="_blank">
+        CC BY-SA 4.0
+      </a>
+    </p>
   </div>
   <div class="footer-right">
-    <nav>
-      <ul>
-         
-        <li><a href="/">首页</a></li>
-         
-        <li><a href="/posts/">文章</a></li>
-         
-        <li><a href="/tags/">标签</a></li>
-         
-        <li><a href="/about/">关于</a></li>
-        
-      </ul>
-    </nav>
+    
   </div>
 </footer>
 
