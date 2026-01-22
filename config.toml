@@ -1,94 +1,168 @@
 baseURL = "https://gridframe.cn"
-languageCode = "en-us"
-title = "Cactus theme example"
+languageCode = "zh-Hans"               # 全局语言代码，这里设为简体中文
+defaultContentLanguage = "zh"          # 默认内容语言为中文
+defaultContentLanguageInSubdir = false # 中文在根路径 /，英文在 /en/（推荐）
+hasCJKLanguage = true                  # 对中文友好：字数统计、摘要等
+
+title = "Boz's Blog"
 theme = "cactus"
-copyright = "You" # cactus will use title if copyright is not set
-disqusShortname = "example" # Used when comments is enabled. Cactus will use site title if not set
-# googleAnalytics = "UA-1234-5"
+copyright = "Boz"           # cactus 会用 title 作为版权文本（你可以改成自己的名字）
+disqusShortname = "example" # 评论用 Disqus 时使用
 
+# googleAnalytics = "UA-1234-5"               # 若要用 GA4，请用 services.googleAnalytics，此处已注释
 
-# summaryLength = 2
+# summaryLength = 2                            # 可根据需要开启
 
-# Main menu which appears below site header.
-[[menu.main]]
+# ============ 多语言配置 ============
+
+[languages]
+# 中文（简体）
+[languages.zh]
+languageName = "中文"
+languageCode = "zh-Hans"
+title = "我的博客"
+weight = 1
+contentDir = "content/zh" # 中文内容放在 content/zh 下
+
+# 英文
+[languages.en]
+languageName = "English"
+languageCode = "en-US"
+title = "Boz's Blog"
+weight = 2
+contentDir = "content/en" # 英文内容放在 content/en 下
+
+# ============ 中文菜单 ============
+
+[[languages.zh.menu.main]]
+name = "首页"
+url = "/"
+weight = 1
+
+[[languages.zh.menu.main]]
+name = "文章"
+url = "/posts/"
+weight = 2
+
+[[languages.zh.menu.main]]
+name = "标签"
+url = "/tags/"
+weight = 3
+
+[[languages.zh.menu.main]]
+name = "关于"
+url = "/about/"
+weight = 4
+
+# ============ 英文菜单 ============
+
+[[languages.en.menu.main]]
 name = "Home"
 url = "/"
 weight = 1
 
-[[menu.main]]
-name = "Writings"
-url = "/posts"
+[[languages.en.menu.main]]
+name = "Posts"
+url = "/posts/"
 weight = 2
 
-[[menu.main]]
+[[languages.en.menu.main]]
 name = "Tags"
-url = "/tags"
+url = "/tags/"
 weight = 3
 
-[[menu.main]]
+[[languages.en.menu.main]]
 name = "About"
-url = "/about"
+url = "/about/"
 weight = 4
 
+# ============ 中文主题参数 ============
+
+[languages.zh.params]
+colortheme = "white"        # dark, light, white, 或 classic
+rss = true                  # 生成 RSS
+showAllPostsArchive = false # 默认值
+
+description = "Hugo 是一个通用的网站框架。从技术上讲，Hugo 是一个静态站点生成器。与每次访问动态生成页面的系统不同，Hugo 在你创建或更新内容时就会构建页面。因为网站被浏览的次数远多于被编辑的次数，Hugo 旨在为网站最终用户提供最佳的浏览体验，并为网站作者提供理想的写作体验。"
+mainSection = "posts"
+showAllPostsOnHomePage = false
+postsOnHomePage = 5                                                                                                                                       # 若 showAllPostsOnHomePage 为 true 则忽略此项
+tagsOverview = true
+showProjectsList = true
+projectsUrl = "https://github.com/gohugoio"
+dateFormat = "2006-01-02"
+show_updated = true
+showReadTime = true
+
+# 中文评论配置（可按需启用）
+[languages.zh.params.comments]
+enabled = true
+engine = "cactus_comments" # 支持 disqus / utterances / cactus_comments
+# [languages.zh.params.comments.utterances]
+#   repo = "<你的GitHub用户名>/<你的仓库名>"
+#   label = "hugo-site-name"
+#   theme = "github-light"
+[languages.zh.params.comments.cactuscomments]
+siteName = "your_cactus_comments_sitename"
+# serverUrl = ""                        # 默认 https://matrix.cactus.chat:8448
+# serverName = ""                       # 默认 cactus.chat
+
+# ============ 英文主题参数 ============
+
+[languages.en.params]
+colortheme = "white"
+rss = true
+showAllPostsArchive = false
+
+description = "Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike systems that dynamically build a page with each visitor request, Hugo builds pages when you create or update your content. Since websites are viewed far more often than they are edited, Hugo is designed to provide an optimal viewing experience for your website’s end users and an ideal writing experience for website authors."
+mainSection = "posts"
+showAllPostsOnHomePage = false
+postsOnHomePage = 5
+tagsOverview = true
+showProjectsList = true
+projectsUrl = "https://github.com/gohugoio"
+dateFormat = "2006-01-02"
+show_updated = true
+showReadTime = true
+
+[languages.en.params.comments]
+enabled = true
+engine = "cactus_comments"
+# [languages.en.params.comments.utterances]
+#   repo = "<your_github_username>/<your_github_reponame>"
+#   label = "hugo-site-name"
+#   theme = "github-light"
+[languages.en.params.comments.cactuscomments]
+siteName = "your_cactus_comments_sitename"
+# serverUrl = ""
+# serverName = ""
+
+# ============ 社交链接（中英文共用，你也可以按语言分开） ============
+
+[[params.social]]
+name = "github"
+link = "https://github.com/gohugoio"
+[[params.social]]
+name = "linkedin"
+link = "https://www.linkedin.com/company/github/"
+[[params.social]]
+name = "email"
+link = "example@example.com" # 无需加 mailto: 前缀
+
+# ============ 标记高亮等全局配置（多语言通常共享） ============
+
 [markup]
-  [markup.tableOfContents]
-    endLevel = 4
-    ordered = false
-    startLevel = 2
-  [markup.highlight]
-    codeFences = true
-    guessSyntax = false
-    hl_Lines = ""
-    lineNoStart = 1
-    lineNos = true
-    lineNumbersInTable = false
-    noClasses = true
-    style = "dracula"
-    tabWidth = 4
-
-[params]
-
-  colortheme = "white" # dark, light, white, or classic
-  rss = true # generate rss feed. default value is false
-  # googleAnalyticsAsync = false # use asynchronous tracking. Synchronous tracking by default
-  showAllPostsArchive = false # default
-
-  # Home page settings
-  description = "Hugo is a general-purpose website framework. Technically speaking, Hugo is a static site generator. Unlike systems that dynamically build a page with each visitor request, Hugo builds pages when you create or update your content. Since websites are viewed far more often than they are edited, Hugo is designed to provide an optimal viewing experience for your website’s end users and an ideal writing experience for website authors."
-  mainSection = "posts" # your main section
-  showAllPostsOnHomePage = false # default
-  postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
-  tagsOverview = true # show tags overview by default.
-  showProjectsList = true # show projects list by default (if projects data file exists).
-  projectsUrl = "https://github.com/gohugoio" # title link for projects list
-
-  # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
-  dateFormat = "2006-01-02" # default
-
-  # Post page settings
-  show_updated = true # default
-  showReadTime = true # default
-
-  [params.comments]
-    enabled = true # default
-    engine = "cactus_comments" # only disqus, utterances, and cactus_comments is supported
-    [params.comments.utterances]
-      repo = "<github_username>/<github_reponame>"
-      label = "hugo-site-name" # you can use however you want to label your name in your repo's issues
-      theme = "github-light"
-    [params.comments.cactuscomments]
-      siteName = "your_cactus_comments_sitename" # see https://cactus.chat/ on how to register your site name
-      #serverUrl = "" # Defaults to https://matrix.cactus.chat:8448 (Cactus Chat public server)
-      #serverName = "" # Defaults to cactus.chat
-
-  # the value of name should be an valid font awesome icon name (brands type)
-  # https://fontawesome.com/icons?d=gallery&s=brands
-  [[params.social]]
-    name = "github"
-    link = "https://github.com/gohugoio"
-  [[params.social]]
-    name = "linkedin"
-    link = "https://www.linkedin.com/company/github/"
-  [[params.social]]
-    name = "email"
-    link = "example@example.com"  # no need for "mailto:" in the head
+[markup.tableOfContents]
+endLevel = 4
+ordered = false
+startLevel = 2
+[markup.highlight]
+codeFences = true
+guessSyntax = false
+hl_Lines = ""
+lineNoStart = 1
+lineNos = true
+lineNumbersInTable = false
+noClasses = true
+style = "dracula"
+tabWidth = 4
