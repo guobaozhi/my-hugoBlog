@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Boz&#39;s Blog</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on Boz&#39;s Blog</description>
+    <title>模板 on Boz&#39;s Blog</title>
+    <link>http://localhost:1313/tags/%E6%A8%A1%E6%9D%BF/</link>
+    <description>Recent content in 模板 on Boz&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>zh-Hans</language>
     <copyright>Boz</copyright>
     <lastBuildDate>Thu, 22 Jan 2026 18:10:53 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E6%A8%A1%E6%9D%BF/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>文章示例模板</title>
       <link>http://localhost:1313/posts/%E6%96%87%E7%AB%A0%E7%A4%BA%E4%BE%8B%E6%A8%A1%E6%9D%BF/</link>
       <pubDate>Thu, 22 Jan 2026 18:10:53 +0800</pubDate>
       <guid>http://localhost:1313/posts/%E6%96%87%E7%AB%A0%E7%A4%BA%E4%BE%8B%E6%A8%A1%E6%9D%BF/</guid>
-      <description>&lt;p&gt;这里记录了如何基于hugo cactus主题搭建博客。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>关于</title>
-      <link>http://localhost:1313/about/</link>
-      <pubDate>Thu, 22 Jan 2026 09:33:53 +0800</pubDate>
-      <guid>http://localhost:1313/about/</guid>
       <description></description>
     </item>
   </channel>
