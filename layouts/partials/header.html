@@ -20,9 +20,40 @@
       {{ range .Site.Menus.main }}
         <li><a href="{{ .URL }}">{{ .Name }}</a></li>
       {{ end }}
-    </ul>
 
-    <!-- 语言切换器：放在 ul 之后，确保它是 #nav 的直接子元素 -->
-    {{ partial "lang-switch.html" . }}
+      <!-- 修改点：将语言切换作为一个 <li> 插入列表，确保水平排列 -->
+      <li class="nav-lang-item">
+        <div class="lang-switch">
+          <ul>
+            {{ range .Site.Languages }}
+              {{ $lang := .Lang }}
+              {{ $isCurrent := eq $lang $.Lang }}
+
+              <li>
+                {{ if $isCurrent }}
+                  <a href="#" class="active">{{ $lang | upper }}</a>
+                {{ else }}
+                  <!-- 修复后的翻译链接获取逻辑 -->
+                  {{ $translationLink := "" }}
+                  {{ range $.Page.Translations }}
+                    {{ if eq .Lang $lang }}
+                      {{ $translationLink = .Permalink }}
+                    {{ end }}
+                  {{ end }}
+
+                  {{ if $translationLink }}
+                    <a href="{{ $translationLink }}">{{ $lang | upper }}</a>
+                  {{ else }}
+                    <a href="{{ $lang | relLangURL }}">{{ $lang | upper }}</a>
+                  {{ end }}
+                {{ end }}
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      </li>
+      <!-- 结束插入 -->
+
+    </ul>
   </div>
 </header>

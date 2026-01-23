@@ -39,16 +39,6 @@
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-01-22T18:10:53+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-Hans"
-                href="http://localhost:1313/posts/"
-                />
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-01-22T18:10:53+08:00</lastmod>
@@ -84,9 +74,5 @@
                 hreflang="zh-Hans"
                 href="http://localhost:1313/about/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/tags/%E5%85%A5%E9%97%A8/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E7%A4%BA%E4%BE%8B/</loc>
   </url>
 </urlset>
