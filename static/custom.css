@@ -1,11 +1,47 @@
-/* Language switch */
-/* Language switch — minimalist */
+/* =========================
+   Navigation Typography
+   ========================= */
+
+#nav a,
+#nav span {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "PingFang SC",
+    "Hiragino Sans GB",
+    "Microsoft YaHei",
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
+
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #555;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#nav a:hover {
+  color: #000;
+}
+
+#nav .active {
+  color: #000;
+  font-weight: 600;
+}
+
+/* =========================
+   Language Switch (Minimal)
+   ========================= */
+
 .lang-switch {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-
-  margin-left: 28px; /* 仅靠留白区分功能 */
+  margin-left: 28px; /* 与主导航拉开距离 */
 }
 
 .lang-switch .lang-icon {
@@ -16,6 +52,7 @@
 .lang-switch a,
 .lang-switch span {
   font-size: 14px;
+  letter-spacing: 0.04em;
   color: #666;
   text-decoration: none;
 }
@@ -27,5 +64,21 @@
 .lang-switch .active {
   color: #000;
   font-weight: 500;
+  letter-spacing: 0.02em;
   cursor: default;
+}
+
+/* =========================
+   Mobile Optimization
+   ========================= */
+
+@media (max-width: 768px) {
+  #nav a,
+  #nav span {
+    font-size: 14px;
+  }
+
+  .lang-switch {
+    margin-left: 18px;
+  }
 }
