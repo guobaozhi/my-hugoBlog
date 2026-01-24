@@ -1,58 +1,61 @@
 <header id="header">
-  <a href="{{ .Site.BaseURL }}">
+  <a href="{{ .Site.BaseURL | relLangURL }}">
   {{ if (isset .Site.Params "gravatar") }}
     <div id="logo" style="background-image: url(https://www.gravatar.com/avatar/{{ md5 .Site.Params.gravatar }}?s=100&d=identicon)"></div>
   {{ else if (isset .Site.Params "logo") }}
-    <div id="logo" style="background-image: url('{{ .Site.Params.logo | absURL }}')"></div>
+    <div id="logo" style="background-image: url({{ .Site.Params.logo | absURL }})"></div>
   {{ else }}
-    <div id="logo" style="background-image: url('{{ "images/logo.png" | absURL }}')"></div>
-  {{ end}}
+    <div id="logo" style="background-image: url({{ "images/logo.png" | absURL }})"></div>
+  {{ end }}
   <div id="title">
     <h1>{{ .Site.Title }}</h1>
   </div>
   </a>
+
   <div id="nav">
-    <!-- 导航菜单列表 -->
     <ul>
+      <!-- 移动端菜单按钮 -->
       <li class="icon">
-        <a href="#" aria-label="Menu"><i class="fas fa-bars fa-2x" aria-hidden="true"></i></a>
+        <a href="#" aria-label="Menu">
+          <i class="fas fa-bars fa-2x" aria-hidden="true"></i>
+        </a>
       </li>
+
+      <!-- 主导航（关键修复点在这里） -->
       {{ range .Site.Menus.main }}
-        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        <li>
+          <a href="{{ .URL | relLangURL }}">
+            {{ .Name }}
+          </a>
+        </li>
       {{ end }}
 
-      <!-- 修改点：将语言切换作为一个 <li> 插入列表，确保水平排列 -->
-      <li class="nav-lang-item">
-        <div class="lang-switch">
-          <ul>
-            {{ range .Site.Languages }}
-              {{ $lang := .Lang }}
-              {{ $isCurrent := eq $lang $.Lang }}
+      <!-- 语言切换 -->
+{{ if gt (len .Site.Languages) 1 }}
+  <li class="lang-switch">
+    <span class="lang-icon" aria-hidden="true">
+      <i class="fas fa-globe"></i>
+    </span>
 
-              <li>
-                {{ if $isCurrent }}
-                  <a href="#" class="active">{{ $lang | upper }}</a>
-                {{ else }}
-                  <!-- 修复后的翻译链接获取逻辑 -->
-                  {{ $translationLink := "" }}
-                  {{ range $.Page.Translations }}
-                    {{ if eq .Lang $lang }}
-                      {{ $translationLink = .Permalink }}
-                    {{ end }}
-                  {{ end }}
-
-                  {{ if $translationLink }}
-                    <a href="{{ $translationLink }}">{{ $lang | upper }}</a>
-                  {{ else }}
-                    <a href="{{ $lang | relLangURL }}">{{ $lang | upper }}</a>
-                  {{ end }}
-                {{ end }}
-              </li>
-            {{ end }}
-          </ul>
-        </div>
-      </li>
-      <!-- 结束插入 -->
+    {{ if .IsTranslated }}
+      {{ range .Translations }}
+        <a href="{{ .RelPermalink }}">
+          {{ .Language.LanguageName }}
+        </a>
+      {{ end }}
+    {{ else }}
+      {{ range .Site.Languages }}
+        {{ if eq .Lang $.Lang }}
+          <span class="active">{{ .LanguageName }}</span>
+        {{ else }}
+          <a href="{{ $.Site.BaseURL }}{{ .Lang }}/">
+            {{ .LanguageName }}
+          </a>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </li>
+{{ end }}
 
     </ul>
   </div>

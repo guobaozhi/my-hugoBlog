@@ -2,8 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/posts/hello-zh/</loc>
+    <lastmod>2026-01-24T11:09:09+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-01-24T11:09:09+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="http://localhost:1313/en/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-Hans"
+                href="http://localhost:1313/posts/"
+                />
+  </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2026-01-22T18:10:53+08:00</lastmod>
+    <lastmod>2026-01-24T11:09:09+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
@@ -35,9 +51,6 @@
     <lastmod>2026-01-22T18:10:53+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/hugo/</loc>
-    <lastmod>2026-01-22T18:10:53+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-01-22T18:10:53+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Boz&#39;s Blog</title>
+    <title>首页 on Boz&#39;s Blog</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Boz&#39;s Blog</description>
+    <description>Recent content in 首页 on Boz&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>zh-Hans</language>
     <copyright>Boz</copyright>
@@ -21,7 +21,7 @@
       <link>http://localhost:1313/about/</link>
       <pubDate>Thu, 22 Jan 2026 09:33:53 +0800</pubDate>
       <guid>http://localhost:1313/about/</guid>
-      <description></description>
+      <description>&lt;p&gt;这里是中文关于&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
