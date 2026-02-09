@@ -2,7 +2,7 @@
 title: "Become a Technical Writer -learning notes part 1"
 slug: ""
 date: 2026-02-8T20:54:56+08:00
-lastmod: 2026-02-8T21:07:45+08:00
+lastmod: 2026-02-8T20:55:56+08:00
 draft: false
 
 description: ""
