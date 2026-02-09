@@ -1,13 +1,15 @@
 ---
-title: "Become a Technical Writer"
-slug: ""
+title: "Become a Technical Writer | learning notes part 1"
+slug: "become-a-technical-writer"
 date: 2026-02-09T21:50:54+08:00
 lastmod: 2026-02-09T21:50:54+08:00
 draft: false
 
-description: ""
+description: "This is a learning notes for becoming a technical writer."
 
 tags: []
+
+tags: [technical writing]
 categories: []
 
 # Cactus 主题相关字段
