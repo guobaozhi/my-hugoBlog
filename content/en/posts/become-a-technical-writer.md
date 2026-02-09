@@ -7,8 +7,6 @@ draft: false
 
 description: "This is a learning notes for becoming a technical writer."
 
-tags: []
-
 tags: [technical writing]
 categories: []
 
