@@ -1,8 +1,8 @@
 ---
-title: "Become a Technical Writer -learning notes part 1"
+title: "Become a Technical Writer"
 slug: ""
-date: 2026-02-8T20:54:56+08:00
-lastmod: 2026-02-8T20:55:56+08:00
+date: 2026-02-09T21:50:54+08:00
+lastmod: 2026-02-09T21:50:54+08:00
 draft: false
 
 description: ""
@@ -35,11 +35,9 @@ author: "Boz"        # 若需要在单篇文章里覆盖作者名，可填；否
 ---
 
 <!-- 这里是文章正文，从这往下写 Markdown -->
-参考资料：
+> 声明：本文内容来源于陶友兰、谢敏、周全、李晓黎、程少武. 英语技术写作精要[M]. 上海：复旦大学出版社, 2020.，仅供非商业用途或交流学习使用，如有侵权请联系删除
 
-- 陶友兰、谢敏、周全、李晓黎、程少武. 英语技术写作精要[M]. 上海：复旦大学出版社, 2020.
-
-# Introduction
+Introduction
 
 ## Introduction to Technical Writing
 
@@ -88,6 +86,3 @@ author: "Boz"        # 若需要在单篇文章里覆盖作者名，可填；否
 ### Relevant Standards in China
 
 ## Technical Development in China
-
-
-
