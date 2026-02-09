@@ -1,9 +1,9 @@
 ---
-title: "技术写作入门指南"
+title: "Become a Technical Writer -learning notes part 1"
 slug: ""
 date: 2026-01-24T20:54:56+08:00
-lastmod: 2026-01-24T20:54:56+08:00
-draft: true
+lastmod: {{ .Date }}
+draft: false
 
 description: ""
 
@@ -36,26 +36,58 @@ author: "Boz"        # 若需要在单篇文章里覆盖作者名，可填；否
 
 <!-- 这里是文章正文，从这往下写 Markdown -->
 参考资料：
-1. 陶友兰、谢敏、周全、李晓黎、程少武. 英语技术写作精要[M]. 上海：复旦大学出版社, 2020.
-2. Google. Technical Writing Courses.[EB/OL]. [2021-03-03].
-3. Wikipedia
 
-## 技术写作初识
+- 陶友兰、谢敏、周全、李晓黎、程少武. 英语技术写作精要[M]. 上海：复旦大学出版社, 2020.
 
-参考：
+# Introduction
 
-## 技术写作规范和标准
+## Introduction to Technical Writing
 
-### IEC 82079-1 标准包含七个主要章节，第 4 章到第 6 章是其“核心内容”：
+### Technical Writing in a Nutshell
 
-### GB 5296.1 消费品使用说明 第1部分：总则
+### The History of Technical Writing
 
-### 风格指南
+### Trends in Technical Writing
 
-参考：
+### Skills of Technical Writers
 
-## 技术写作流程、文档类型和写作工具
+### Professional Resorces
 
-参考：
-《英语技术写作精要》
+## The Writing Process
+
+### Planning
+
+### Developing
+
+### Revising
+
+### Delivery
+
+## Types of Technical Documents
+
+### Technical Documents Categorized by Users
+
+### Technical Documents Categorized by Product Development Stages
+
+## Technical Writing Tools
+
+### Word Processing Tools
+
+### XML Editors
+
+### Component Content Management Systems (CCMS)
+
+## International Standards for Technical Writers
+
+### The Landscape of InternationalStandards in Technical Writing
+
+### IEC82079-1
+
+### ANSI Z535
+
+### Relevant Standards in China
+
+## Technical Development in China
+
+
 
