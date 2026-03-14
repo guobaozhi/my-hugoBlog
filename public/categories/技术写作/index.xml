@@ -1,20 +1,58 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>技术写作 on Boz&#39;s Blog</title>
     <link>http://localhost:1313/categories/%E6%8A%80%E6%9C%AF%E5%86%99%E4%BD%9C/</link>
     <description>Recent content in 技术写作 on Boz&#39;s Blog</description>
+    <image>
+      <title>Boz&#39;s Blog</title>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
     <generator>Hugo</generator>
-    <language>zh-Hans</language>
-    <copyright>Boz</copyright>
+    <language>en</language>
     <lastBuildDate>Thu, 22 Jan 2026 18:10:53 +0800</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/%E6%8A%80%E6%9C%AF%E5%86%99%E4%BD%9C/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>文章示例模板</title>
-      <link>http://localhost:1313/posts/%E6%96%87%E7%AB%A0%E7%A4%BA%E4%BE%8B%E6%A8%A1%E6%9D%BF/</link>
+      <title>风格的要素-- William Strunk | 学习笔记</title>
+      <link>http://localhost:1313/posts/%E9%A3%8E%E6%A0%BC%E7%9A%84%E8%A6%81%E7%B4%A0-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Thu, 22 Jan 2026 18:10:53 +0800</pubDate>
-      <guid>http://localhost:1313/posts/%E6%96%87%E7%AB%A0%E7%A4%BA%E4%BE%8B%E6%A8%A1%E6%9D%BF/</guid>
-      <description>&lt;h2 id=&#34;the-elements-of-style---william-strunk-学习笔记&#34;&gt;The elements of style - William Strunk 学习笔记&lt;/h2&gt;&#xA;&lt;h3 id=&#34;英语用法的基本规则-elementary-rules-of-usage&#34;&gt;英语用法的基本规则 Elementary Rules of Usage&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;规则 1：单数名词词尾加&amp;rsquo;s 构成所有格&lt;/li&gt;&#xA;&lt;li&gt;规则 2：在三个或三个以上项目并列时，在最后一项前使用连词，其余各项用逗号隔开&lt;/li&gt;&#xA;&lt;li&gt;规则 3：将插入语放在两个逗号之间&lt;/li&gt;&#xA;&lt;li&gt;规则 4：在引导独立从句的连词前加逗号&lt;/li&gt;&#xA;&lt;li&gt;规则 5：勿用逗号连接独立分句&lt;/li&gt;&#xA;&lt;li&gt;规则 6：勿将句子一截为二&lt;/li&gt;&#xA;&lt;li&gt;规则 7：在独立分句之后用冒号引导一系列具体事物、同位语、解释或起例证作用的引语&lt;/li&gt;&#xA;&lt;li&gt;规则 8：用破折号表示突然的停顿或中断、引导较长的同位语或总结性语句&lt;/li&gt;&#xA;&lt;li&gt;规则 9：主语的单复数决定谓语动词的单复数&lt;/li&gt;&#xA;&lt;li&gt;规则 10：代词的格要用得得当&lt;/li&gt;&#xA;&lt;li&gt;规则 11：位于句首的分词短语所修饰的必须是该句的主语&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;写作的基本原则elementary-principles-of-composition&#34;&gt;写作的基本原则Elementary principles of composition&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;规则 12：选择恰当的布局结构，并始终如一&lt;/li&gt;&#xA;&lt;li&gt;规则 13：将段落作为文章的基本单位&lt;/li&gt;&#xA;&lt;li&gt;规则 14：使用主动语态&lt;/li&gt;&#xA;&lt;li&gt;规则 15：用肯定句进行陈述&lt;/li&gt;&#xA;&lt;li&gt;规则 16：使用肯定、明确、具体的语言&lt;/li&gt;&#xA;&lt;li&gt;规则 17：删除多余的词语&lt;/li&gt;&#xA;&lt;li&gt;规则 18：避免使用一连串的散句&lt;/li&gt;&#xA;&lt;li&gt;规则 19：以相似的形式表达并列的意思&lt;/li&gt;&#xA;&lt;li&gt;规则 20：将相关的词放在一起&lt;/li&gt;&#xA;&lt;li&gt;规则 21：在概述时使用同一种时态&lt;/li&gt;&#xA;&lt;li&gt;规则 22：将需要强调的词放在句末&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;写作格式的注意事项-a-few-matters-of-form&#34;&gt;写作格式的注意事项 A few matters of form&lt;/h3&gt;&#xA;&lt;h3 id=&#34;常被误用的单词和短语-words-and-expressions-commonly-misused&#34;&gt;常被误用的单词和短语 Words and expressions commonly misused&lt;/h3&gt;&#xA;&lt;h3 id=&#34;拼写-spelling&#34;&gt;拼写 Spelling&lt;/h3&gt;</description>
+      <guid>http://localhost:1313/posts/%E9%A3%8E%E6%A0%BC%E7%9A%84%E8%A6%81%E7%B4%A0-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <description>&lt;!-- 这里是文章正文，从这往下写 Markdown --&gt;
+&lt;h2 id=&#34;英语用法的基本规则-elementary-rules-of-usage&#34;&gt;英语用法的基本规则 Elementary Rules of Usage&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;规则 1：单数名词词尾加&amp;rsquo;s 构成所有格&lt;/li&gt;
+&lt;li&gt;规则 2：在三个或三个以上项目并列时，在最后一项前使用连词，其余各项用逗号隔开&lt;/li&gt;
+&lt;li&gt;规则 3：将插入语放在两个逗号之间&lt;/li&gt;
+&lt;li&gt;规则 4：在引导独立从句的连词前加逗号&lt;/li&gt;
+&lt;li&gt;规则 5：勿用逗号连接独立分句&lt;/li&gt;
+&lt;li&gt;规则 6：勿将句子一截为二&lt;/li&gt;
+&lt;li&gt;规则 7：在独立分句之后用冒号引导一系列具体事物、同位语、解释或起例证作用的引语&lt;/li&gt;
+&lt;li&gt;规则 8：用破折号表示突然的停顿或中断、引导较长的同位语或总结性语句&lt;/li&gt;
+&lt;li&gt;规则 9：主语的单复数决定谓语动词的单复数&lt;/li&gt;
+&lt;li&gt;规则 10：代词的格要用得得当&lt;/li&gt;
+&lt;li&gt;规则 11：位于句首的分词短语所修饰的必须是该句的主语&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;写作的基本原则-elementary-principles-of-composition&#34;&gt;写作的基本原则 Elementary principles of composition&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;规则 12：选择恰当的布局结构，并始终如一&lt;/li&gt;
+&lt;li&gt;规则 13：将段落作为文章的基本单位&lt;/li&gt;
+&lt;li&gt;规则 14：使用主动语态&lt;/li&gt;
+&lt;li&gt;规则 15：用肯定句进行陈述&lt;/li&gt;
+&lt;li&gt;规则 16：使用肯定、明确、具体的语言
+语言明确优于笼统、清晰优于含糊、具体优于抽象。&lt;/li&gt;
+&lt;li&gt;规则 17：删除多余的词语&lt;/li&gt;
+&lt;li&gt;规则 18：避免使用一连串的散句&lt;/li&gt;
+&lt;li&gt;规则 19：以相似的形式表达并列的意思&lt;/li&gt;
+&lt;li&gt;规则 20：将相关的词放在一起&lt;/li&gt;
+&lt;li&gt;规则 21：在概述时使用同一种时态&lt;/li&gt;
+&lt;li&gt;规则 22：将需要强调的词放在句末&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;写作格式的注意事项-a-few-matters-of-form&#34;&gt;写作格式的注意事项 A few matters of form&lt;/h2&gt;
+&lt;p&gt;标题
+在文稿的题目或标题下方空出一行或与之相当的间隔。&lt;/p&gt;
+&lt;p&gt;数字
+不要将日期或其他序号全用英文字母拼写出来。用阿拉伯数字或罗马符号书写更合适。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
