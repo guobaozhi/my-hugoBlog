@@ -1,6 +1,6 @@
 [build.environment]
-HUGO_VERSION = "v0.155.3" # 改成和你本地的 hugo version 一致
-TZ = "Asia/Shanghai"      # 可选，按自己时区改
+HUGO_VERSION = "0.157.0" # 改成和你本地的 hugo version 一致
+TZ = "Asia/Shanghai"     # 可选，按自己时区改
 
 [build]
 publish = "public"             # 构建产物目录，默认就是 public
