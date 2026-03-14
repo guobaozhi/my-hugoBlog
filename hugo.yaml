@@ -124,7 +124,7 @@ outputs:
 
 menu:
   main:
-    - identifier: Thoughts
+    - identifier: thoughts
       name: Thoughts
       url: /thoughts/
       weight: 10
