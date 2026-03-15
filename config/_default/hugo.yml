@@ -170,5 +170,3 @@ markup:
   goldmark:
     renderer:
       unsafe: true
-
-frontmatte.lastmod: ['lastmod', ':git', 'date', 'publishDate']
