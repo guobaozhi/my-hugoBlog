@@ -55,6 +55,8 @@ params:
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
+  busuanzi:
+    enable: true # 开启网站访问量统计
 
 # 功能开关
   ShowReadingTime: true
@@ -64,7 +66,6 @@ params:
   ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
-  # ShowScrollToTop: true
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
@@ -170,3 +171,4 @@ markup:
     renderer:
       unsafe: true
 
+frontmatte.lastmod: ['lastmod', ':git', 'date', 'publishDate']

@@ -4,18 +4,26 @@ en:
   title: Boz's Blog
   menu:
     main:
-      - name: Archive
+      - identifier: archives
+        name: Archive
         pageRef: archives
         weight: 5
-      - name: Search
+
+      - identifier: search
+        name: Search
         pageRef: search
         weight: 10
-      - name: Tags
+
+      - identifier: tags
+        name: Tags
         pageRef: tags
         weight: 15
-      - name: About
+
+      - identifier: about
+        name: About
         pageRef: about
         weight: 20
+
   params:
       description: "Boz's Blog, sharing my journey."
       homeInfoParams:
@@ -29,18 +37,30 @@ zh:
   title: Boz's博客
   menu:
     main:
-      - name: Thoughts
+      - identifier: thoughts
+        name: Thoughts
         pageRef: thoughts
         weight: 10
-      - name: Search
+
+      - identifier: search
+        name: Search
         pageRef: search
         weight: 20
-      - name: Tags
+
+      - identifier: tags
+        name: Tags
         pageRef: tags
         weight: 30
-      - name: About
-        pageRef: about
+
+      - identifier: archives
+        name: Archive
+        pageRef: archives
         weight: 40
+
+      - identifier: about
+        name: About
+        pageRef: about
+        weight: 50
   params:
     description: "Boz's 博客，分享我的技术写作。"
     homeInfoParams:

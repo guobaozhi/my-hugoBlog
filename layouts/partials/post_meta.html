@@ -1,0 +1,33 @@
+{{- $scratch := newScratch }}
+
+{{- if not .Date.IsZero -}}
+    {{- $dateStr := .Date.Format (default "January 2, 2006" site.Params.DateFormat) -}}
+    {{- $translatedPublished := i18n "published" -}}
+    {{- $dateHTML := printf "<span title='%s'>%s</span>" (.Date) $dateStr -}}
+    {{- $scratch.Add "meta" (slice (printf "%s %s" $translatedPublished $dateHTML)) }}
+    {{- end }}
+
+    {{- if not .Lastmod.IsZero -}}
+    {{- $lastmodStr := .Lastmod.Format (default "January 2, 2006" site.Params.DateFormat) -}}
+    {{- $translatedLastModified := i18n "last_modified" -}}
+    {{- $lastmodHTML := printf "<span title='%s'>%s</span>" (.Lastmod) $lastmodStr -}}
+    {{- $scratch.Add "meta" (slice (printf "%s %s" $translatedLastModified $lastmodHTML)) }}
+{{- end }}
+
+{{- if (.Param "ShowReadingTime") -}}
+{{- $scratch.Add "meta" (slice (i18n "read_time" .ReadingTime | default (printf "%d min" .ReadingTime))) }}
+{{- end }}
+
+{{- if (.Param "ShowWordCount") -}}
+{{- $scratch.Add "meta" (slice (i18n "words" .WordCount | default (printf "%d words" .WordCount))) }}
+{{- end }}
+
+{{- if not (.Param "hideAuthor") -}}
+{{- with (partial "author.html" .) }}
+{{- $scratch.Add "meta" (slice .) }}
+{{- end }}
+{{- end }}
+
+{{- with ($scratch.Get "meta") }}
+{{- delimit . "&nbsp;·&nbsp;" | safeHTML -}}
+{{- end -}}
