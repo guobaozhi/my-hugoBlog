@@ -64,7 +64,7 @@ params:
   ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
-  ShowScrollToTop: true
+  # ShowScrollToTop: true
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
