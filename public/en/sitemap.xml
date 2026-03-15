@@ -2,69 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/en/posts/hello-en/</loc>
-    <lastmod>2026-01-24T10:07:45+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/en/</loc>
-    <lastmod>2026-01-24T10:07:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-Hans"
-                href="http://localhost:1313/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/"
-                />
-  </url><url>
-    <loc>http://localhost:1313/en/posts/</loc>
-    <lastmod>2026-01-24T10:07:45+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-Hans"
-                href="http://localhost:1313/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="http://localhost:1313/en/posts/"
-                />
-  </url><url>
     <loc>http://localhost:1313/en/about/</loc>
     <lastmod>2026-01-22T09:33:53+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-Hans"
-                href="http://localhost:1313/about/"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/about/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://localhost:1313/en/about/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/</loc>
+    <lastmod>2026-01-22T09:33:53+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-Hans"
-                href="http://localhost:1313/categories/"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/categories/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://localhost:1313/en/categories/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/resume/</loc>
+  </url><url>
+    <loc>http://localhost:1313/en/posts/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/posts/"
+                />
+  </url><url>
+    <loc>http://localhost:1313/en/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/en/search/"
                 />
   </url><url>
     <loc>http://localhost:1313/en/tags/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="zh-Hans"
-                href="http://localhost:1313/tags/"
+                hreflang="zh-CN"
+                href="http://localhost:1313/zh/tags/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
+                hreflang="en"
                 href="http://localhost:1313/en/tags/"
                 />
   </url>

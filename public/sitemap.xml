@@ -1,34 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2026-01-22T18:10:53+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-01-22T18:10:53+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/%E6%8A%80%E6%9C%AF%E5%86%99%E4%BD%9C/</loc>
-    <lastmod>2026-01-22T18:10:53+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/%E8%8B%B1%E8%AF%AD%E5%86%99%E4%BD%9C/</loc>
-    <lastmod>2026-01-22T18:10:53+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/%E9%A3%8E%E6%A0%BC%E7%9A%84%E8%A6%81%E7%B4%A0-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2026-01-22T18:10:53+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2026-01-22T18:10:53+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/about/</loc>
-    <lastmod>2026-01-22T09:33:53+08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/archives/</loc>
-  </url><url>
-    <loc>http://localhost:1313/search/</loc>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-  </url><url>
-    <loc>http://localhost:1313/thoughts/</loc>
-  </url>
-</urlset>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <sitemap>
+    <loc>http://localhost:1313/zh/sitemap.xml</loc>
+    
+      <lastmod>2026-01-22T18:10:53+08:00</lastmod>
+    
+  </sitemap>
+  
+  <sitemap>
+    <loc>http://localhost:1313/en/sitemap.xml</loc>
+    
+      <lastmod>2026-01-22T09:33:53+08:00</lastmod>
+    
+  </sitemap>
+  
+</sitemapindex>

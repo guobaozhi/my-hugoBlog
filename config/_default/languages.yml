@@ -1,0 +1,49 @@
+en:
+  languageCode: en
+  languageName: English
+  title: Boz's Blog
+  menu:
+    main:
+      - name: Archive
+        pageRef: archives
+        weight: 5
+      - name: Search
+        pageRef: search
+        weight: 10
+      - name: Tags
+        pageRef: tags
+        weight: 15
+      - name: About
+        pageRef: about
+        weight: 20
+  params:
+      description: "Boz's Blog, sharing my journey."
+      homeInfoParams:
+        Title: "Boz's Blog"
+        subtitle: Little squirrel Hopping around
+        Content: >
+          👋 Welcome to boz's Blog!
+zh:
+  languageCode: zh-CN
+  languageName: 中文
+  title: Boz's博客
+  menu:
+    main:
+      - name: Thoughts
+        pageRef: thoughts
+        weight: 10
+      - name: Search
+        pageRef: search
+        weight: 20
+      - name: Tags
+        pageRef: tags
+        weight: 30
+      - name: About
+        pageRef: about
+        weight: 40
+  params:
+    description: "Boz's 博客，分享我的技术写作。"
+    homeInfoParams:
+      Title: "Boz's 博客"
+      Content: >
+        👋 欢迎来到Boz's 博客！

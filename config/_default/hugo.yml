@@ -1,12 +1,42 @@
+# 基础功能配置
 baseURL: "https://gridframe.cn"
 title: Boz's Blog
-paginate: 10
-theme: PaperMod
+languageCode: "zh-cn"
+theme: PaperMod # 主题名称
 
+# 多语言配置
+defaultContentLanguage: zh
+defaultContentLanguageInSubdir: true
+
+languages:
+  zh:
+    languageName: 中文
+    weight: 1
+    contentDir: content/zh
+    title: Boz's技术博客
+    languageCode: zh-cn
+  en:
+    languageName: English
+    weight: 2
+    contentDir: content/en
+    title: Bosz's Blog
+    languageCode: en-us
+
+
+# 分页配置
+paginate: 10  # 每页文章数
+paginatePath: "page"  # 分页目录
+
+# 构建配置
 enableRobotsTXT: true
-buildDrafts: false
-buildFuture: false
-buildExpired: false
+buildDrafts: false # 不构建草稿
+buildFuture: false # 不构建未来的文章
+buildExpired: false # 不构建过期的文章
+
+# URL 配置
+uglyURLs: false # 使用美观的 URL
+relativeURLs: false # 使用绝对 URL
+canonifyURLs: false # 不强制规范化 URL
 
 googleAnalytics: UA-123-45
 
@@ -26,6 +56,7 @@ params:
   defaultTheme: auto # dark, light
   disableThemeToggle: false
 
+# 功能开关
   ShowReadingTime: true
   ShowShareButtons: false
   ShowPostNavLinks: true
@@ -33,12 +64,14 @@ params:
   ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
+  ShowScrollToTop: true
   UseHugoToc: true
   disableSpecial1stPost: false
   disableScrollToTop: false
-  comments: false
+  comments: true
   hidemeta: false
   hideSummary: false
+  searchHidden: false
   showtoc: true
   tocopen: true
 
@@ -96,6 +129,8 @@ params:
     hidden: true # hide everywhere but not in structured data
     hiddenInList: true # hide on list pages and home
     hiddenInSingle: true # hide on single page
+    responsiveImages: false # To reduce generation time and size of the site
+    linkFullImages: #true To enable hyperlinks to the full image size on post pages
 
   editPost:
     URL: "https://github.com/guobaozhi/my-hugoBlog/content"
@@ -119,27 +154,6 @@ outputs:
     - HTML
     - RSS
     - JSON # necessary for search
-
-
-
-menu:
-  main:
-    - identifier: thoughts
-      name: Thoughts
-      url: /thoughts/
-      weight: 10
-    - identifier: tags
-      name: Tags
-      url: /tags/
-      weight: 20
-    - identifier: search
-      name: Search
-      url: /search/
-      weight: 30
-    - identifier: about
-      name: About
-      url: /about/
-      weight: 40
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 pygmentsUseClasses: true
