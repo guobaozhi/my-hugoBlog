@@ -28,9 +28,9 @@ en:
       description: "Boz's Blog, sharing my journey."
       homeInfoParams:
         Title: "Boz's Blog"
-        subtitle: Little squirrel Hopping around
+        subtitle: "Notes, technical writing, and thoughts."
         Content: >
-          👋 Welcome to boz's Blog!
+          👋  Welcome to boz's Blog!
 zh:
   languageCode: zh-CN
   languageName: 中文

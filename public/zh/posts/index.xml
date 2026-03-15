@@ -15,9 +15,9 @@
     <atom:link href="http://localhost:1313/zh/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>风格的要素-- William Strunk | 学习笔记</title>
-      <link>http://localhost:1313/zh/posts/%E9%A3%8E%E6%A0%BC%E7%9A%84%E8%A6%81%E7%B4%A0-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
+      <link>http://localhost:1313/zh/posts/2026/%E9%A3%8E%E6%A0%BC%E7%9A%84%E8%A6%81%E7%B4%A0-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</link>
       <pubDate>Thu, 22 Jan 2026 18:10:53 +0800</pubDate>
-      <guid>http://localhost:1313/zh/posts/%E9%A3%8E%E6%A0%BC%E7%9A%84%E8%A6%81%E7%B4%A0-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
+      <guid>http://localhost:1313/zh/posts/2026/%E9%A3%8E%E6%A0%BC%E7%9A%84%E8%A6%81%E7%B4%A0-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</guid>
       <description>&lt;!-- 这里是文章正文，从这往下写 Markdown --&gt;
 &lt;p&gt;这里是文章正文。&lt;/p&gt;
 &lt;h2 id=&#34;英语用法的基本规则-elementary-rules-of-usage&#34;&gt;英语用法的基本规则 Elementary Rules of Usage&lt;/h2&gt;

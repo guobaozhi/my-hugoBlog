@@ -55,8 +55,8 @@ params:
   DateFormat: "January 2, 2006"
   defaultTheme: auto # dark, light
   disableThemeToggle: false
-  busuanzi:
-    enable: true # 开启网站访问量统计
+  # busuanzi:
+  #   enable: false # 开启网站访问量统计
 
 # 功能开关
   ShowReadingTime: true
